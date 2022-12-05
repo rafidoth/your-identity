@@ -1,0 +1,283 @@
+/* Add fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* RESET CSS */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+  
+  nav, main, aside, footer, header, section {
+    display: block;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  input, button, select, textarea {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+
+  button{
+    cursor: pointer;
+  }
+  
+
+  /* colors */
+:root{
+    /* set color variables matching with color palletes */
+    /* https://colorhunt.co/ */
+    /* https://coolors.co/ */
+    --black : #1F1D36;
+    --navy : #3F3351;
+    --purple : #864879;
+    --peach : #E9A6A6;
+    
+    
+}
+
+
+#light{
+    --bg-color : #ffffff;
+    --text-color : #141414; 
+    --ash : #5555559f;
+}
+
+#dark{
+    --bg-color : #141414;
+    --text-color : #ffffff;
+    --ash : #ffffff9f;
+}
+
+
+/* basic Styles */
+body{
+  background-color: var(--bg-color);
+  background-size: contain;
+  color: var(--text-color);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.sub-heading{
+  color: var(--ash);
+}
+
+/* .gradient{
+  linear-gradient(to right, #6a11cb 0%, #2575fc 100%)
+} */
+
+
+/* Project start here */
+
+
+.centerize{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.container{
+  width: 1200px;
+  height: 620px;
+  background: linear-gradient(var(--bg-color),var(--bg-color)) padding-box, linear-gradient(to right, #6a11cb 0%, #2575fc 100%) border-box;
+  border: 5px solid transparent;
+  border-radius: 1rem;
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+
+.container2{
+  width: 1200px;
+  height: 600px;
+  background:linear-gradient(to right, #6a11cb 0%, #2575fc 100%) border-box;
+  border: 5px solid transparent;
+  border-radius: 1rem;
+  position: absolute;
+  filter: blur(1000px);
+  z-index: -1;
+}
+
+
+
+.side-bar{
+  width: 30%;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  border-radius: 1rem;
+}
+
+
+.divider{
+  height: 0.5px;
+  width: 70%;
+  background-color: white;
+}
+
+
+.btn-row{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+#night-mode{
+  position: relative;
+  z-index: 2;
+
+}
+
+.night-mode{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  filter: blur(40px);
+  background-color: var(--text-color); ;
+}
+
+.steps{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.num{
+  cursor: pointer;
+  width: 30%;
+  height: 72.44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+
+}
+
+.num-unfocused{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  
+}
+.num-focused{
+  background: white padding-box;
+  color: black;
+  border: 17px solid transparent;
+  border-radius: 50%;
+}
+
+.text{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  
+}
+
+
+.step>.text>p{
+  color: #ffffff9f;
+}
+
+
+
+.main-part{
+  width: 70%;
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 10px;
+}
+
+
+
+.form-input{
+  margin-top: 40px;
+}
+.form-input>p{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.form-input > input{
+  border: 1px solid var(--text-color);
+  width: 90%;
+  padding : 15px;
+  border-radius: 10px;
+}
+.form-input > textarea{
+  border: 1px solid var(--text-color);
+  width: 90%;
+  padding : 15px;
+  border-radius: 10px;
+}
+
+.last-row{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.last-row>button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  margin-top:10px;
+}
+
+
+.hover:hover{
+  background-color: #2575fc;
+  border-color: #2575fc;
+  color: var(--bg-color);
+ 
+}
