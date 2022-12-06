@@ -238,6 +238,8 @@ body{
 
 .form-input{
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .form-input>p{
   margin-bottom: 10px;
@@ -248,6 +250,7 @@ body{
   width: 90%;
   padding : 15px;
   border-radius: 10px;
+
 }
 .form-input > textarea{
   border: 1px solid var(--text-color);
@@ -256,6 +259,10 @@ body{
   border-radius: 10px;
 }
 
+.form-input > span{
+  color : red;
+  padding-left: 10px;
+}
 .last-row{
   width: 90%;
   height: 100px;
@@ -281,3 +288,9 @@ body{
   color: var(--bg-color);
  
 }
+
+.hide{
+  display: none;
+}
+
+

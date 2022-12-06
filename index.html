@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="centerize" id="dark">
-    <div class="container">
+    <div class="container centerize">
         <div class="side-bar">
             <div class="btn-row">
                 <button><img id="night-mode" src="assets/images/dark-mode.png" alt="" srcset="" style="width: 40px;height: 40px;"></button>
@@ -42,33 +42,74 @@
         <div class="main-part">
             <form id="mform" action="">
                     <div id="main-form">
-                        <div class="step1">
+                        <div class="" id="step1">
                             <h1 style="font-size: 40px;">Personal Info</h1>
                             <p class="sub-heading" style="font-size: 18px;">Please provide your name, email address and phone number</p>
                             <div class="form-input">
                                 <p>Name</p>
-                                <input placeholder="e.g. Rafiul Hasan" type="text">
+                                <input id="name" placeholder="e.g. Rafiul Hasan" type="text" required>
+                                <span id="name-error"></span>
                             </div>
                             
                             <div class="form-input">
                                 <p>Email Address</p>
-                                <input placeholder="e.g. rafiulhasan@lorem.com" type="text">
+                                <input id="email" placeholder="e.g. rafiulhasan@lorem.com" type="text" required>
+                                <span id="email-error"></span>
                             </div>
                             
                             <div class="form-input">
                                 <p>Phone Number</p>
-                                <input placeholder="e.g. 017********" type="text">
+                                <input id="phone" placeholder="e.g. 017********" type="text" required>
+                                <span id="phone-error"></span>
+                            </div>
+                            <div class="last-row">
+                                <button class="hover next-btn" id="next-pi" type="button">Next</button>
                             </div>
                         </div>
-                        <div class="last-row">
-                            <button class="hover next-btn">Next</button>
+
+                        <div class="hide" id="step2"> 
+                            <h1 style="font-size: 40px;">EDUCATIONAL Info</h1>
+                            <p class="sub-heading" style="font-size: 18px;">Please provide your university name and ID</p>
+                            <div class="form-input">
+                                <p>University Name</p>
+                                <input id="uni" placeholder="e.g. United International University" type="text" required>
+                                <span id="uni-error"></span>
+                            </div>
+                            
+                            <div class="form-input">
+                                <p>ID</p>
+                                <input id="id" placeholder="e.g. 12345678910" type="text" required>
+                                <span id="id-error"></span>
+                            </div>
+
+                            <div class="last-row">
+                                <button class="hover next-btn" id = "next-yc" type="button">Next</button>
+                            </div>
+                            
                         </div>
+                            
+
+                        <div class="hide" id="step3">
+                            <h1 style="font-size: 40px;">Your Comment</h1>
+                            <p class="sub-heading" style="font-size: 18px;">Please provide your comment here</p>
+                            <div class="form-input">
+                                <p>Write here</p>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="last-row">
+                                <button id="final-submit" class="hover" type="button">Submit</button>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
     
                     
             </form>
 
         </div>
+        
     </div>
     <div class="container2">
     </div>
