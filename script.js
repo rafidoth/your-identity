@@ -184,6 +184,5 @@ const submitHandler  = () =>{
     </div>
     `;
     container[0].innerHTML = thankyou;
-    console.log(container.classList(), container);
 }
 finalSubmit.addEventListener('click', submitHandler);
